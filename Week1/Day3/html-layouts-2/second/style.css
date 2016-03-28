@@ -1,0 +1,55 @@
+.main-page{
+  position: relative;
+  background: gray;
+  padding: 50px 50px 50px 50px;
+}
+.top-box{
+  position: relative;
+  width: auto;
+  margin:auto;
+  background: white;
+  padding: 20px 20px 20px 20px;
+}
+.button-one{
+  width: 20%;
+  background: red;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  padding: 20px 20px 20px 20px;
+}
+.button-two{
+  width: 20%;
+  background: blue;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  padding: 20px 20px 20px 20px;
+
+}
+.bottom-box{
+  width: auto;
+  position: relative;
+  background: white;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px 20px 20px 20px;
+}
+.bottom-box-img{
+  width: 60px;
+}
+.footer{
+  margin: auto;
+  position: relative;
+  padding: 4%;
+  background: black;
+}
+.footer-one{
+  display: inline-block;
+  text-align: center;
+  color: white;
+  padding: 1px 20px 5px 20px;
+  float: right;
+}

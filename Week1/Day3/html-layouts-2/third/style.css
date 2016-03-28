@@ -1,0 +1,54 @@
+.head{
+  width: 100%;
+  height: 100px;
+  background: black;
+}
+.apple{
+  color: white;
+  position: relative;
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 3%;
+  font-size: 2em;
+}
+.google{
+  color: white;
+  position: relative;
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 3%;
+  font-size: 2em;
+}
+.title{
+  font-size: 3.5em;
+  position: relative;
+  text-align: left;
+  font-style: normal;
+  top-margin: 1%;
+  padding-top: 2%;
+}
+.text{
+  width: 48%;
+  float: left;
+  clear: none;
+  padding: 1%;
+}
+.img{
+  width: 48%;
+  height: 450px;
+  float: right;
+  margin-top: -55px;
+  background: gray;
+  padding: 1%;
+}
+.text2{
+  width: 48%;
+  float: right;
+  padding: 1%;
+}
+.footer{
+  width: 100%;
+  height: 150px;
+  background: black;
+  clear: both;
+}

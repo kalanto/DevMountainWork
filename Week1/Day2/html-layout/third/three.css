@@ -1,0 +1,44 @@
+.head{
+  width: 100%;
+  height: 250px;
+  background: black;
+  float: left;
+}
+.menu{
+float: left;
+height: 50px;
+width: 50px;
+background: pink;
+margin-top: 40px;
+margin-left: 40px;
+}
+.top{
+width: 100%;
+height: 800px;
+background: gray;
+float: left;
+}
+.one{
+  width: 100%;
+  height: 250px;
+  background: blue;
+  float:left;
+}
+.two{
+  width: 100%;
+  height: 250px;
+  background: green;
+  float: left;
+}
+.three{
+  width: 100%;
+  height: 250px;
+  background: yellow;
+  float: left;
+}
+.four{
+  width: 100%;
+  height: 250px;
+  background: red;
+  float: left;
+}

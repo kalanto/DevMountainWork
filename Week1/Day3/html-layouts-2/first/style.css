@@ -1,0 +1,87 @@
+.main{
+width: 100%;
+position: relative;
+background: green;
+}
+.header{
+  width: 100%;
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+  background: none;
+}
+.menu{
+width: 20%;
+height: 75px;
+display: inline-block;
+margin-top: 20px;
+margin-left: 20px;
+background: red;
+}
+.logo{
+  width: 20%;
+  height: 75px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 150px;
+  background: blue;
+}
+.login{
+  width: 20%;
+  height: 75px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 125px;
+  background: gray;
+}
+.content-text{
+  width: 97%;
+  position: relative;;
+  margin: auto;
+  background: none;
+  padding: 10px 10px 10px 10px;
+  text-align: justify;
+}
+.content{
+  width: 100%;
+  position: relative;
+  background: none;
+}
+.content-left{
+  width: 20%;
+  height: 300px;
+  background: red;
+  position: relative;
+  display: inline-block;
+}
+.content-right{
+  width: 80%;
+  height: 300px;
+  position: absolute;
+  background: blue;
+  display: inline-block;
+}
+.footer{
+  width: 100%;
+  position: relative;
+}
+.footer-left{
+  width: 60%;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  background: blue;
+}
+.footer-right{
+  width: 40%;
+  height: 100px;
+  position: absolute;
+  display: inline-block;
+  background: red;
+}
+.footer-right-photo{
+  width: 30%;
+  height: 100px;
+  position: absolute;
+  margin: 0 auto;
+  background: gray;
+}

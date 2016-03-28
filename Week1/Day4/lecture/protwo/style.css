@@ -1,0 +1,438 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+h1, h2, h3, h4, h5, h6, p, a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.home-page-header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.logo{
+  margin-left: 20px;
+}
+.menu{
+  margin-right: 20px;
+}
+.home-page-intro-box{
+  width: 100%;
+  background: linear-gradient(to bottom, #21abc7 ,#616db3);
+  color: white;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+.intro-header-text{
+  font-size: 26px;
+  color: white;
+  margin-bottom: 15px;
+}
+.intro-text{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+.intro-button{
+  background-color: #ffae1c;
+  border: 1px solid #ffae1c;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+.learn-header{
+  text-align: left;
+  font-size: 24px;
+  padding-left: 10px;
+  margin: 0 auto;
+    margin-top: 50px;
+}
+.learn-intro{
+  text-align: left;
+  font-size: 90%;
+  line-height: 3;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+.learn-video{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.startLearning{
+  font-size: 21px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.startLearningText{
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+.CourseContainer{
+  display: flex;
+  flex-direction: column;
+}
+.rubyLogo{
+  margin: 0 auto;
+  margin-top: -50px;
+  text-align: center;
+  border: 5px solid white;
+}
+.rubyContainer{
+  border-radius: 8px;
+  border: 1px solid gray;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.rubyTitle{
+  color: #21abc7;
+  font-size: 16px;
+  padding-top: 12%;
+}
+.rubyTextBox{
+  margin: 0 auto;
+  padding: 6%;
+  font-size: 14px;
+}
+.rubyButton{
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: #21ABC7;
+  border-radius: 50px;
+  padding: 2% 5%;
+  color: white;
+}
+.rubyLowerBox{
+  border-top: 1px solid black;
+}
+.rubyFootTextTop{
+  font-size: 12px;
+  line-height: 18px;
+  color: #aebdc1;
+  padding: 10px;
+}
+.rubyFootTextBottom{
+  font-size: 14px;
+  color: #21abc7;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.JavaScriptLogo{
+  margin: 0 auto;
+  margin-bottom: -50px;
+  text-align: center;
+  border: 5px solid white;
+}
+.JavaScriptContainer{
+  border-radius: 8px;
+  border: 1px solid gray;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.JavaScriptText{
+  margin: 0 auto;
+  padding: 6%;
+  font-size: 14px;
+}
+.JavaScriptTitle{
+  color: #21abc7;
+  font-size: 16px;
+  padding-top: 12%;
+}
+.JavaScriptButton{
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: #21ABC7;
+  border-radius: 50px;
+  padding: 2% 5%;
+  color: white;
+}
+.JavaScriptLowerBox{
+    border-top: 1px solid black;
+}
+.JavaScriptTextTop{
+  font-size: 12px;
+  line-height: 18px;
+  color: #aebdc1;
+  padding: 10px;
+}
+.JavaScriptTextBottom{
+  font-size: 14px;
+  color: #21abc7;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.HTMLCSSLogo{
+  margin: 0 auto;
+  margin-bottom: -50px;
+  text-align: center;
+  border: 5px solid white;
+}
+.HTMLCSSContainer{
+  border-radius: 8px;
+  border: 1px solid gray;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+.HTMLCSSText{
+  margin: 0 auto;
+  padding: 6%;
+  font-size: 14px;
+}
+.HTMLCSSTitle{
+  color: #21abc7;
+  font-size: 16px;
+  padding-top: 12%;
+}
+.HTMLCSSButton{
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: #21ABC7;
+  border-radius: 50px;
+  padding: 2% 5%;
+  color: white;
+}
+.HTMLCSSLowerBox{
+    border-top: 1px solid black;
+}
+.HTMLCSSTextTop{
+  font-size: 12px;
+  line-height: 18px;
+  color: #aebdc1;
+  padding: 10px;
+}
+.HTMLCSSTextBottom{
+  font-size: 14px;
+  color: #21abc7;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.PythonLogo{
+  margin: 0 auto;
+  margin-bottom: -50px;
+  text-align: center;
+  border: 5px solid white;
+}
+.PythonContainer{
+  border-radius: 8px;
+  border: 1px solid gray;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.PythonText{
+  margin: 0 auto;
+  padding: 6%;
+  font-size: 14px;
+}
+.PythonTitle{
+  color: #21abc7;
+  font-size: 16px;
+  padding-top: 12%;
+}
+.PythonButton{
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: #21ABC7;
+  border-radius: 50px;
+  padding: 2% 5%;
+  color: white;
+}
+.PythonLowerBox{
+    border-top: 1px solid black;
+}
+.PythonTextTop{
+  font-size: 12px;
+  line-height: 18px;
+  color: #aebdc1;
+  padding: 10px;
+}
+.PythonTextBottom{
+  font-size: 14px;
+  color: #21abc7;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.flexCards{
+  display: flex;
+  flex-direction: column;
+}
+.first{
+  margin: 0 auto;
+}
+.firstHeader{
+  margin: 0 auto;
+  font-size: 21px;
+  line-height: 29px;
+  color: #575a5b;
+  text-align: left;
+}
+.second{
+  margin: 0 auto;
+  text-align: center;
+}
+.secondHeader{
+  font-size: 16px;
+  text-align: left;
+  color: #575a5b;
+  line-height: 22px;
+}
+.secondText{
+  font-size: 14px;
+  text-align: left;
+  color: #575a5b;
+  line-height: 22px;
+}
+.third{
+  margin: 0 auto;
+  text-align: center;
+}
+.thirdHeader{
+  font-size: 16px;
+  text-align: left;
+  color: #575a5b;
+  line-height: 22px;
+}
+.thirdText{
+  font-size: 14px;
+  text-align: left;
+  color: #575a5b;
+  line-height: 22px;
+}
+.forth{
+  margin: 0 auto;
+  text-align: center;
+}
+.forthHeader{
+  font-size: 16px;
+  text-align: left;
+  color: #575a5b;
+  line-height: 22px;
+}
+.forthText{
+  font-size: 14px;
+  text-align: left;
+  color: #575a5b;
+  line-height: 22px;
+}
+.fifth{
+  margin: 0 auto;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.fifthHeader{
+  font-size: 16px;
+  text-align: left;
+  color: #575a5b;
+  line-height: 22px;
+}
+.fifthText{
+  font-size: 14px;
+  text-align: left;
+  color: #575a5b;
+  line-height: 22px;
+}
+.reviewSection{
+  background: lightgray;
+}
+.reviewHeaderText{
+  font-size: 21px;
+  line-height: 29px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5%;
+}
+.reviewHeaderContent{
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.reviewOne{
+
+}
+.reviewOneText{
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  padding-top: 5%;
+  padding-right: 10%;
+}
+.reviewPhotoOne{
+  border-radius: 100%;
+  max-height: 80px;
+}
+.reviewNameText{
+
+}
+.reviewTwo{
+
+}
+.reviewTwoText{
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  padding-top: 5%;
+  padding-right: 10%;
+}
+.reviewPhotoTwo{
+  border-radius: 100%;
+  max-height: 80px;
+}
+.reviewThree{
+
+}
+.reviewThreeText{
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  padding-top: 5%;
+  padding-right: 10%;
+}
+.reviewPhotoThree{
+  border-radius: 100%;
+  max-height: 80px;
+}
+.reviewFooterContainer{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.reviewFooterText{
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5%;
+}
+.reviewFooterButton{
+  padding: 3%;
+  border-radius: 50px;
+  background: #21ABC7;
+}
+.planOne{
+    width: auto;
+
+    background: linear-gradient(to bottom, #F6892E ,#F25852);
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+}
+.priceContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.planTwo{
+
+}
