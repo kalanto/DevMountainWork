@@ -1,21 +1,24 @@
-var module = (function() {
-    var person = {
-        name: "phillip",
-        age: 29,
-        location: 'Utah'
-    };
+var seahawks = {
+  	name: "Seahawks",
+	wins: 0,
+	losses: 0
+}
 
-    var privateMethod = function(){
-        return person.name + ' ' + person.age + ' ' + person.location
-    };
+var eagles = {
+  	name: "Eagles",
+	wins: 0,
+	losses: 0
+}
+/**** Do not edit the above objects *****/
 
-    return {
-       // your publicMethod here
-      var publicMethod = function(){
-      return privateMethod;
-    	}
-    };
 
-})();
+// Code for teamWin function here.
+function teamWin(obj1, obj2){
+obj1.wins++;
+obj2.losses++;
+}
 
- module.publicMethod();
+/**** Do not edit the function below ****/
+var teamTrack = function(winTeam, loseTeam, callback){
+	callback(winTeam, loseTeam)
+}

@@ -79,9 +79,19 @@ multiply(4, 3, function(answer){
 
 
   //Code Here for contains
-function contains(arr, cb){
+
+
+function contains(arr, names, cb){
+   //loop through the array
    for (var i = 0; i < arr.length; i++) {
-      arr[i]
+         //check for the name in the array
+         if(arr[i] === names){
+         //invoke callback if name exist
+         return cb(true);
+      }
+    else{
+      return cb(false);
+      }
    }
 }
 contains(names, 'Colt', function(result){
@@ -102,7 +112,17 @@ contains(names, 'Colt', function(result){
 
 
     //Code Here for uniq
-
+    function uniq(arr, cb){
+           arr.sort();  ///sorts the array
+           for(var i = 1; i < arr.length; ){ //loops through the array
+               if(arr[i-1] == arr[i]){
+                   arr.splice(i, 1);   ////removes duplicates
+               } else {
+                   i++;    //increases the loop counter
+               }
+           }
+           return cb(arr);  ///returns the array to the callback with duplicates removed
+       }
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
 });
@@ -117,6 +137,13 @@ uniq(names, function(uniqArr){
 
 
     //Code Here for each
+function each(arr, cb) {
+   // return item and an index to callback
+   // call the call back once for each item in the array
+
+   // arr.forEach.indexOf(cb(arr);
+   // }
+}
 
 each(names, function(item, indice){
   console.log('The item in the ' + indice + ' position is ' + item)
@@ -133,7 +160,13 @@ each(names, function(item, indice){
 
 
  //code here for getUserById
-
+function getUserById(obj, prop, cb) {
+   for(prop in obj){   //loops through object
+      if(obj.hasOwnProperty(prop)){  //checks property match of value passed in
+         return cb(obj[prop]);      //returns obj back with callback
+      }
+   }
+}
 var users = [
   {
     id: '12d',
