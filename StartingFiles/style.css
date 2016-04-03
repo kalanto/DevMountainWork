@@ -1,3 +1,16 @@
+$(document).ready(function(){
+/*
+
+jQuery elements go here
+
+*/
+
+
+
+})
+
+
+
 .navBar{
    display: flex;
    justify-content: space-between;
