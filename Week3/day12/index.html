@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body ng-controller="mainCtrl">
+      <form>
+         <input ng-model="artist" placeholder="artist"></input>
+         <input ng-model="genre" placeholder="genre"></input>
+         <input ng-model="rating" placeholder="rating"></input>
+         <button ng-click="addArtist()">Add Artist</button>
+      </form>
+      <section>
+         <div ng-repeat="artist in reallyLike">
+            <h1>really like:</h1>
+            {{artist.name}} {{artist.genre}} {{artist.rating}}</div>
+         <div ng-repeat="artist in kindaLike">
+            <h1>kinda like:</h1>
+            {{artist.name}} {{artist.genre}} {{artist.rating}}</div>
+      </section>
+
+
+
+         <script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+         <script src="app.js"></script>
+         <script src="mainCtrl.js"></script>
+         <script src="MainSrv.js"></script>
+   </body>
+</html>
