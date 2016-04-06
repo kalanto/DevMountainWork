@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="quoteBook">
    <head>
-      <meta charset="utf-8">
       <title></title>
    </head>
-   <body ng-controller="dir">
+   <body ng-controller="director">
+{{test}}
+   <div ng-repeat="quote in quotes">
+      {{quote.text}}
+      {{quote.author}}
+   </div>
 
+   <form>
+   <input ng-model="textInput"></input>
+   <input ng-model="authorInput"></input>
+   <button ng-click="add({text:textInput,author:authorInput})" >Add</button>
+   <button ng-click="remove({text:textInput,author:authorInput})">Remove</button>
+
+
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+         <script src="/js/app.js"></script>
+         <script src="/js/dir.js"></script>
+         <script src="/js/ser.js"></script>
    </body>
 </html>
