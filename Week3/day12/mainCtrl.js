@@ -14,7 +14,7 @@ angular.module('app')
             name: $scope.artist,
             genre: $scope.genre,
             rating: $scope.rating
-         }
+         };
       }
 
       // function clearInputField(){
