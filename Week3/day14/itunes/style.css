@@ -42,3 +42,6 @@ rgb(12, 174, 209)
 .ngViewport{
    background: rgb(98, 98, 98);
 }
+.container{
+   background: rgb(0, 224, 255);
+}
