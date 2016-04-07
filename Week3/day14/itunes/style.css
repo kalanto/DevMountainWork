@@ -12,6 +12,7 @@ html, body {
 
 .ngTopPanel {
  line-height: 25px;
+ background: rgb(236, 60, 115);
 }
 
 .ngCell  {
@@ -25,15 +26,19 @@ html, body {
  display : table-row;
  height: auto !important;
  position: static;
-
+rgb(12, 174, 209)
 }
 
 .ngCellText{
  height: auto !important;
  white-space: normal;
  overflow:visible;
+ /*background: rgb(236, 60, 115);*/
 }
 
 .ngGrid.unselectable {
  margin-top: 10px;
+}
+.ngViewport{
+   background: rgb(98, 98, 98);
 }

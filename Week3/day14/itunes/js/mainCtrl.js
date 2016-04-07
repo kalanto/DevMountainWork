@@ -4,19 +4,27 @@ app.controller('mainCtrl', function($scope, itunesService){
   //This is setting up the default behavior of our ng-grid. The important thing to note is
   //the 'data' property. The value is 'songData'. That means ng-grid is looking for songData on $scope and is putting whatever songData is into the grid.
   //this means when you make your iTunes request, you'll need to get back the information, parse it accordingly, then set it to songData on the scope ->$scope.songData....
-
+  $scope.filterOptions = {
+     filterText: ""
+ };
 
   $scope.gridOptions = {
       data: 'songData',
       height: '110px',
-      sortInfo: {fields: ['Song', 'Artist', 'Collection', 'Type'], directions: ['asc']},
-      columnDefs: [
+      sortInfo: {fields: ['Song', 'Artist', 'Collection', 'Type'],
+      directions: ['asc']},
+      filterOptions: $scope.filterOptions,
+   columnDefs: [
         {field: 'previewUrl', displayName: 'Play', width: '40px', cellTemplate: '<div class="ngCellText" ng-class="col.colIndex()"><a href="{{row.getProperty(col.field)}}"><img src="http://www.icty.org/x/image/Miscellaneous/play_icon30x30.png"></a></div>'},
         {field: 'artistName', displayName: 'Artist'},
+        {field: 'trackName', displayName: 'Track Name'},
         {field: 'collectionName', displayName: 'Collection'},
         {field: 'artworkUrl30', displayName: 'Album Art', width: '110px', cellTemplate: '<div class="ngCellText" ng-class="col.colIndex()"><img src="{{row.getProperty(col.field)}}"></div>'},
         {field: 'primaryGenreName', displayName: 'Type'},
+        {field: 'trackPrice', displayName: 'Track Price'},
         {field: 'collectionPrice', displayName: 'Collection Price'},
+        {field: 'currency', displayName: 'Currency'},
+        {field: 'trackCount', displayName: 'Track Count'}
       ]
   };
 
@@ -32,15 +40,14 @@ app.controller('mainCtrl', function($scope, itunesService){
   //Also note that that method should be retuning a promise, so you could use .then in this function.
 
     //Code here
-$scope.getSongData = function(artist){
-   itunesService.getTunes(artist).then(function(dataFromService){
-      $scope.songData = dataFromService;
-      console.log(dataFromService);
-   },
-   function(dataFromService) {
-      console.log(songData);
-   });
-};
+
+
+   $scope.getSongData = function(){
+         itunesService.getTunes($scope.artist).then(function(hellokitty){
+            $scope.songData = hellokitty;
+         });
+   };
+
 
   //Check that the above method is working by entering a name into the input field on your web app, and then console.log the result
 
