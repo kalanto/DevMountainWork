@@ -1,4 +1,4 @@
-angular.module("appArray").service("service", function(){
+angular.module("arrayApp").service("service", function(){
 
 	this.getData = function(){
 		return myData;
