@@ -1,15 +1,9 @@
-<html ng-app="arrayApp">
+<html>
 	<head>
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
-	<body ng-controller="arrayController">
-		<input class="filter" ng-model="nameFilter" placeholder="Filter by name here...">
-		<input class="filter" ng-model="phoneFilter" placeholder="Filter by phone # here...">
-			<div ng-repeat="person in people | filter: {name: nameFilter, phone: phoneFilter}">
-				<br>
-					{{person.name}} | {{person.email}} | {{person.dateEmployed}} | {{person.phone}}
-				<hr/>
-			</div>
+	<body>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
