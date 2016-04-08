@@ -1,5 +1,5 @@
-angular.module("app1").controller("controller", function($scope, text){
+angular.module("app1").controller("controller", function($scope){
 
 $scope.test = "tacos appear on the page";
-$scope.input = $scope.text;
+$scope.text = "enter text here....";
 });
