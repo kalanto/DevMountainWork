@@ -38,9 +38,9 @@ Check out the index.html page
 * mainCtrl is included and associated with everything in the main-container
 * a menu is created that's going to be at the top of the page for every route
 * ui-router script tag -- UI Router doesn't come built-in with Angular
-* <div ui-view></div> is included and inside of our index.html
+* div ui-view></div> is included and inside of our index.html
 
-The <div ui-view></div> element and it's placement is crucial to understanding how routing works. That simple <div ui-view></div> holds the power to the universe, or at least the routes inside this app. The router is going to take that element and inject certain templates (html pages) into it depending on which route we're using. The template that is injected into the <div ui-view></div> element depends entirely on what we specify in using the `$stateProvider` object in our app.js file. Creating a router this way allows us to dynamically switch templates and controllers based on the URL.
+The div ui-view></div> element and it's placement is crucial to understanding how routing works. That simple div ui-view></div> holds the power to the universe, or at least the routes inside this app. The router is going to take that element and inject certain templates (html pages) into it depending on which route we're using. The template that is injected into the div ui-view></div> element depends entirely on what we specify in using the `$stateProvider` object in our app.js file. Creating a router this way allows us to dynamically switch templates and controllers based on the URL.
 
 Once you feel VERY comfortable with the existing codebase, move on to Step 2.
 
