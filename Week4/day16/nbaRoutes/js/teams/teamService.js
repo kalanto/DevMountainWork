@@ -35,4 +35,22 @@ app.service('teamService', function ($http, $q) {
          });
          return deferred.promise;
    };
+   this.getTeamData = function(gameObj){
+      return $http({
+         method: 'GET',
+         url: 'https://api.parse.com/1/classes/' + gameObj
+      }).then(function(data){
+         var results = data.data.results;
+         for(var i = 0; i < results.length; i++){
+         if(results[i].won === true){
+            wins++;
+         }
+         else{losses++;}
+         results.wins = wins;
+         results.losses = losses;
+         return results;
+      }
+      });
+   };
+
 });
