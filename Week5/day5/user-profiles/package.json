@@ -1,0 +1,30 @@
+{
+  "name": "kalanto",
+  "version": "1.0.0",
+  "description": "pract project",
+  "main": "server.js",
+  "scripts": {
+    "test": "taco",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevMountain/user-profiles.git"
+  },
+  "keywords": [
+    "tacos",
+    "rule"
+  ],
+  "author": "scott booth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevMountain/user-profiles/issues"
+  },
+  "homepage": "https://github.com/DevMountain/user-profiles#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0"
+  }
+}
