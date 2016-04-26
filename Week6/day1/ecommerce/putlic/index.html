@@ -7,11 +7,24 @@
    <body ng-controller="mainCtrl">
 
       <div ng-repeat="product in products">{{product}}</div>
-
-
+<hr/>
+   <h1>
+      ADMIN SECRETS! SHHHHHH ;P
+   </h1>
+<hr/>
+   Add Product
       <input ng-model="productTitle" placeholder="Add product here"></input>
       <input ng-model="productColor" placeholder="color?"></input>
       <button ng-click="addProduct(productTitle, productColor)"></button>
+<hr/>
+   Update product
+   <input ng-model="productID"></input>
+   <button ng-click="updateProduct(pproductID)"></button>
+<hr/>
+   Delete product
+      <input ng-model="productID">
+      <button ng-click="delProduct(pproductID)"></button>
+<hr/>
 
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>

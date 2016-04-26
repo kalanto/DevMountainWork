@@ -17,4 +17,16 @@ this.addProduct = function(productTitle, productColor){
       }
       });
    };
+this.delProduct = function(productID){
+   return $http({
+      method: 'DELETE',
+      url: '/api/products/' + productID
+   });
+};
+this.updateProduct = function(productID){
+   return $http({
+      method: 'PUT',
+      url: '/api/products/' + productID
+   });
+};
 });
