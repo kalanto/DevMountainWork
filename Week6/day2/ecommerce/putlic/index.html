@@ -6,27 +6,38 @@
    </head>
    <body ng-controller="mainCtrl">
 
-      <div ng-repeat="product in products">{{product._id}}{{product.Title}}--{{product.Description}}--{{product.Price}}<button ng-click="addCart(product.Title, product.Description, product.Price)">Add2Cart</button></div>
+      <div ng-repeat="product in products" ng-click="select(product)">
+         Name: {{product.Title}}
+            <br>
+               Description:   {{product.Description}}--{{product.Price}}
+                  <br>
+                     <button ng-click="addCart(product.Title, product.Description, product.Price)">Add2Cart</button>
+                  <br>
+      </div>
    <hr/>
       Choping Cart Esse!
    <br>
-      <div ng-repeat="item in cart track by $index">
-         {{item}}
+      <div ng-repeat="product in cart track by $index">
+         {{product}}<br>
       </div>
    <hr/>
       <h1>
          ADMIN SECRETS! SHHHHHH ;P
       </h1>
    <hr/>
-      Add Product
-         <input ng-model="productTitle" placeholder="Add product here"></input>
-         <input ng-model="productDescription" placeholder="color?"></input>
-         <input type="number" ng-model="productPrice" placeholder="productPrice"></input>
+      Edit Product's
+   <br>
+         <input ng-model="productTitle" placeholder="Product name...."></input>
+         <input ng-model="productDescription" placeholder="Description..."></input>
+         <input type="number" ng-model="productPrice" placeholder="Price..."></input>
          <button ng-click="addProduct(productTitle, productDescription, productPrice)">add</button>
-   <!-- <hr/>
-      Update product
-         <input ng-model="product"></input>
-         <button ng-click="updateProduct(product)">update</button> -->
+<br>
+         <input ng-model="selected.Title" placeholder="Product name...."></input>
+         <input ng-model="selected.Description" placeholder="Description..."></input>
+         <input type="number" ng-model="selected.Price" placeholder="Price..."></input>
+         <button ng-click="updateProduct(selected)">update</button>
+   <hr/>
+
    <hr/>
       Delete product
          <input ng-model="productID"></input>

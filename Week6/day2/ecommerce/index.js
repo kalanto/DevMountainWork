@@ -49,7 +49,7 @@ app.put('/api/products/:id', function(req, res){
 	// if(!req.params.id){
 	// 	return res.status(400).send('id query needed');message
 	// }
-	Product.update(req.params.id, function(error, response){
+	Product.update(req.params.id, req.body,function(error, response){
 		if(error) {
 			return res.status(500).send(error);
 		} else {
@@ -61,7 +61,7 @@ app.delete('/api/products/:id', function(req, res){
 	// if(!req.params.id){
 	// 	return res.status(400).send('id query needed');
 	// }
-	Product.remove(req.params.id, function(error, response){
+	Product.findOneAndRemove(req.params.id, function(error, response){
 		if(error) {
 			return res.status(500).send(error);
 		} else {

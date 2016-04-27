@@ -24,12 +24,23 @@ this.addProduct = function(productTitle, productDescription, productPrice){
          Description: productDescription,
          Price: productPrice
       }
-      });
-   };
+   });
+};
 this.delProduct = function(productID){
    return $http({
       method: 'DELETE',
-      url: '/api/products/' + productID._id
+      url: '/api/products/' + productID.id
    });
 };
+this.updateProduct = function(selected){
+      return $http({
+         method: 'PUT',
+         url: '/api/products/' + selected._id,
+         data: {
+            Title: selected.Title,
+            Description: selected.Description,
+            Price: selected.Price
+         }
+      });
+   };
 });
