@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="store">
+   <head>
+      <meta charset="utf-8">
+      <title>Fake Store</title>
+   </head>
+   <body ng-controller="mainCtrl">
+
+      <div ng-repeat="product in products">{{product._id}}{{product.Title}}--{{product.Description}}--{{product.Price}}<button ng-click="addCart(product.Title, product.Description, product.Price)">Add2Cart</button></div>
+   <hr/>
+      Choping Cart Esse!
+   <br>
+      <div ng-repeat="item in cart track by $index">
+         {{item}}
+      </div>
+   <hr/>
+      <h1>
+         ADMIN SECRETS! SHHHHHH ;P
+      </h1>
+   <hr/>
+      Add Product
+         <input ng-model="productTitle" placeholder="Add product here"></input>
+         <input ng-model="productDescription" placeholder="color?"></input>
+         <input type="number" ng-model="productPrice" placeholder="productPrice"></input>
+         <button ng-click="addProduct(productTitle, productDescription, productPrice)">add</button>
+   <!-- <hr/>
+      Update product
+         <input ng-model="product"></input>
+         <button ng-click="updateProduct(product)">update</button> -->
+   <hr/>
+      Delete product
+         <input ng-model="productID"></input>
+         <button ng-click="delProduct(productID)">delete</button>
+   <hr/>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/mainCtrl.js"></script>
+      <script src="js/service.js"></script>
+   </body>
+</html>

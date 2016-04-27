@@ -6,7 +6,7 @@ var Schema = mongoose.Schema;
 mongoose.connect("mongodb://localhost/mongoose-demo-1");
 
 /* Define an instance of a schema using the Schema constructor function */
- 
+
 var userSchema = new Schema({
   username: String,
   name: String,
@@ -23,7 +23,7 @@ var Any = new Schema({any: Schema.Types.Mixed});
 /* Define a model
  * http://mongoosejs.com/docs/models.html
  */
- 
+
 var User = mongoose.model("User", userSchema);
 
 var george = new User({
@@ -31,7 +31,7 @@ var george = new User({
   name: "George Foreman",
   age: 98,
   active: true
-})
+});
 
 /* Save the model to the database */
 george.save();
@@ -68,7 +68,7 @@ User.find({username: "george.foreman"}, function(err, res) {
 /* Queries
  * http://mongoosejs.com/docs/queries.html
  */
- 
+
 User.
   find({username: /george/}).
   limit(1).
