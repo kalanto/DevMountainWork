@@ -47,7 +47,7 @@ app.get('/api/products/:id', function(req, res){
 });
 app.put('/api/products/:id', function(req, res){
 	// if(!req.params.id){
-	// 	return res.status(400).send('id query needed');
+	// 	return res.status(400).send('id query needed');message
 	// }
 	Product.update(req.params.id, function(error, response){
 		if(error) {
