@@ -2,7 +2,7 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 var bcrypt = require("bcrypt");
-
+// comment
 /* Connect to database */
 mongoose.connect("mongodb://localhost/demo-really-fun");
 
@@ -82,7 +82,7 @@ var jimBob = new Contact({
 });
 
 /* One-to-many Embedded */
- 
+
 var personSchema = new Schema({
   name: String,
   rolodex: [{
@@ -259,7 +259,7 @@ Project
   .exec(function(err, project) {
     console.log(project);
   });
-       
+
 User.remove();
 Contact.remove();
 Person.remove();
