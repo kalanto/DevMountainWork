@@ -18,6 +18,4 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
          resolve: {teamData: function(teamService, $stateParams){
             return teamService.getTeamData($stateParams.team);}}
       });
-
-
 });
